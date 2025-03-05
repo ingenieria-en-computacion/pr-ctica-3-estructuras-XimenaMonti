@@ -11,8 +11,7 @@ int main(){
     print_conjunto(d);
     print_conjunto(e);
 
-    printf("El conjunto c está vacío: %d \n", es_vacio(c)); // Corregido el printf
-    c = agregar(c, 2);
+    printf("El conjunto c está vacío: %d \n", es_vacio(c)); 
     c = agregar(c, 3);
     c = agregar(c, 19);
     c = agregar(c, 11);
