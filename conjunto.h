@@ -1,23 +1,23 @@
 #ifndef __CONJUNTO_H__
 #define __CONJUNTO_H__
 #define TAM 1000
-#include<stdbool.h>
+#include <stdbool.h>
 
 typedef int DATO;
 
-typedef struct Conjunto{
+typedef struct Conjunto {
     DATO datos[TAM];
     short cant;
-}CONJUNTO;
+} CONJUNTO;
 
-//Prototipos de las funciones 
+// Prototipos de las funciones 
 CONJUNTO conjunto_vacio();
-CONJUNTO agregar(CONJUNTO,DATO);
-bool pertenece(CONJUNTO,DATO);
-CONJUNTO quitar(CONJUNTO,DATO);
-bool es_vacio(COMJUNTO);
+CONJUNTO agregar(CONJUNTO, DATO);
+bool pertenece(CONJUNTO, DATO);
+CONJUNTO quitar(CONJUNTO, DATO);
+bool es_vacio(CONJUNTO);
 int cardinal(CONJUNTO);
-CONJUNTO _union(CONJUNTO c,CONJUNTO d);
+CONJUNTO union_conjuntos(CONJUNTO, CONJUNTO);
 void print_conjunto(CONJUNTO);
 
 #endif
